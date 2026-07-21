@@ -13,7 +13,8 @@ As I was planning out my first project I realised that my tenant has no structur
 
 
 ## Screenshot
-
+![Architecture Diagram Example](.\screenshots\example-architecture-diagram.png)
+![Budget Creation Menu](.\screenshots\buget-creation.png)
 
 ## What I learned
 Naming resources follow a structure {prefix}-{workload}-{environment}-{region}.
