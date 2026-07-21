@@ -8,7 +8,8 @@ As I was planning out my first project I realised that my tenant has no structur
 2. Navigated to subscriptions on the home dashboard
 3. Created a subscription, left most settings as default
 4. Decided to create a budget (subscription -> cost management -> budgets ) as I am cautious of building up cost as I'm on the pay-as-you go plan. Budget alerts will inform me If I'm spending any money. My budget tells me if I've spent a pound.
-5. I then created a resource group, here you would start to segment depending on the usecase, e.g. if it's a finance resource
+5. I then created a resource group, here you would start to segment depending on the usecase, e.g. if it's a finance resource. In this case it was called "rg-personalproject-test-uksoutch".
+6. I attached a tag to indicate it's part of my personal projects.
 
 
 ## Screenshot
