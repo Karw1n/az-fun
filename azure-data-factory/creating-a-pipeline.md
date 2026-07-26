@@ -8,13 +8,28 @@ A regional retail company receives a daily sales export from their point-of-sale
 Previously this was done manually — someone on the ops team would download and re-upload the file each morning. The company needed this automated, auditable, and decoupled from human intervention so it could run reliably at 7am before the finance team started their day.
 
 ## Steps
-1. ...
-2. ...
-
+1. Create Data Factory - Left settings as default
+2. Created two storage containers, input (for input file) and output (output destination).
+3. Uploaded a csv file to input container
+4. Opened Data Factory (once I granted the correct permissions)
+5. Create a new pipeline to copy source to sink
+6. Created a copy data from the'move and transform' tab.
+7. Set up the source dataset, creating a new linked service.
+8. Linked service settings left at default, just had to select resource group.
+9. For properties selected file path to input file.
+10. Same process for sink, selecting the linked service we just created. Select import scheme as none.
+11. Publish all to deploy our pipeline
+12. Data succesfully copied from input to output..
 ## Screenshot
 
 ## What I learned
+- For a Copy pipeline, you need a source and sink (destination)
+- Linked service is like a connection string, it holds the eaxt details needed for the factory to connect to the outside data sources.
+- Import schema defines where Data Factory should get its structure of the destination dataset from.
 
 ## Gotchas
-Things that didn't work first time, error messages you hit,
-why the obvious approach was wrong.
+- Initially did not have permission to view data factory. So had to grant role assignment to allow access.
+- For sink properties I needed to name the output file destination, not just the folder. 
+- Gotcha above caused an error due to the import schema as the blob container didn't exist. Solution was to set import scheme to 'None'
+- Output container was not updated, despite successful publish.
+- Turns out it did, there was just a delay
