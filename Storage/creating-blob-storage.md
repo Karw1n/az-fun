@@ -12,8 +12,8 @@ Create a Blob storage to store some data (csv file).
 6. Added my workload tag.
 7. Reviewed and created.
 8. Within the storage account created a container, deafult private access
-9. Uploaded a csv file to the blob
-
+9. Uploaded a csv file to the blob. Was now able to view and edit it.
+10. Deleted the storage container.
 
 
 ## Screenshot
