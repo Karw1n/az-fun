@@ -19,7 +19,8 @@ Previously this was done manually — someone on the ops team would download and
 9. For properties selected file path to input file.
 10. Same process for sink, selecting the linked service we just created. Select import scheme as none.
 11. Publish all to deploy our pipeline
-12. Data succesfully copied from input to output..
+12. Data succesfully copied from input to output.
+13. Deleted all resources used in this demo.
 ## Screenshot
 
 ## What I learned
